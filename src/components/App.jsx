@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+
 import { Box } from './Box';
 import shortid from 'shortid';
 import Form from './Form/Form';
@@ -68,19 +68,6 @@ export default function App() {
     </Box>
   );
 }
-App.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    })
-  ),
-  filter: PropTypes.string,
-  addName: PropTypes.func,
-  deleteContact: PropTypes.func,
-  changeFilter: PropTypes.func,
-};
 
 // class OldApp extends Component {
 //   state = {
